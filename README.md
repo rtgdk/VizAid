@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Warning 1: If your Android is or higher than 6.0 (MarshMallow) , then please provide permission externally by opening app information and
 granting the required access permissions. ScreenShots are provided for reference.
 <img src="SampleScreenshots/Warning1.jpg" width="50%"/>
@@ -69,3 +70,7 @@ Microsoft will receive the images you upload and may use them to improve the Com
 API and related services. By submitting an image, you confirm you have consent
 from everyone in it.
 All Microsoft Cognitive Services SDKs and samples are licensed with the MIT License.
+=======
+# VizAid
+An Android App for the Visually Impaired people to see through their Smartphone
+>>>>>>> c40cb6502df2fecf387eba220905e89bc983742b
