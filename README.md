@@ -1,4 +1,4 @@
-
+## Our code.fun.do Online Project.
 ## Warning 1: If your Android is or higher than 6.0 (MarshMallow) , then please provide permission externally by opening app information and
 granting the required access permissions. ScreenShots are provided for reference.
 <img src="SampleScreenshots/Warning1.jpg" width="50%"/>
@@ -23,9 +23,9 @@ This app demonstrates image analysis, Optical Character Recognition (OCR), and f
 * [Learn about the Emotion API](https://www.microsoft.com/cognitive-services/en-us/emotion-api)
 
 ## Team Name : 221B
+	Member Name : Rohit Lodha
 	Member Name : Vivek Singhvi
 	Member Name : Akshit Kumar
-	Member Name : Rohit Lodha
 
 ## The Client Library
 The client library is a thin Java client wrapper for the Computer Vision API.
@@ -71,6 +71,4 @@ API and related services. By submitting an image, you confirm you have consent
 from everyone in it.
 All Microsoft Cognitive Services SDKs and samples are licensed with the MIT License.
 =======
-# VizAid
-An Android App for the Visually Impaired people to see through their Smartphone
->>>>>>> c40cb6502df2fecf387eba220905e89bc983742b
+
