@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">VizAid</string>
+
+    <string name="subscription_key">7321cfbdf95e4ea3a59ac996e11acc2a</string>
+    <string name="add_subscription_key_tip_title">Subscription Key is Needed</string>
+    <string name="add_subscription_key_tip">Please put your subscription key to source file \"app/res/values/strings.xml\" to enable Vision API calls.</string>
+
+    <string name="esubscription_key">5a6913e53a964d9590db94d5f45e5d9a</string>
+
+
+    <string name="faceSubscription_key">de0e4439d2b2492c8a85e6db16601e2e</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_describe">Describe Image</string>
+    <string name="title_activity_recognize">Read Text</string>
+    <string name="title_activity_emotion">Recognize Emotion</string>
+
+    <!-- Select image activity -->
+    <string name="select_an_image">Select an Image</string>
+
+
+</resources>
