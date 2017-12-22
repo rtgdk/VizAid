@@ -4,17 +4,21 @@
 
 package com.vivek.vizaid.vizaid;
 
-import android.annotation.TargetApi;
+import android.Manifest;
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Build;
-import android.speech.tts.TextToSpeech;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.view.GestureDetectorCompat;
+import android.support.v7.app.ActionBarActivity;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
-import android.support.v4.view.GestureDetectorCompat;
+import android.widget.Toast;
 
 import java.util.HashMap;
 import java.util.Locale;
@@ -25,11 +29,26 @@ public class MainActivity extends ActionBarActivity implements GestureDetector.O
     private static final int SWIPE_VELOCITY_THRESHOLD = 100;
     private GestureDetectorCompat gestureDetector;
     private TextToSpeech t1;
+    public static final int MY_PERMISSIONS_CAM = 1;
     private int flag=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+checkPermissions();
+
+
+
+
+
+
+
+
+
+
+
 
         if (getString(R.string.subscription_key).startsWith("Please")) {
             new AlertDialog.Builder(this)
@@ -62,10 +81,68 @@ public class MainActivity extends ActionBarActivity implements GestureDetector.O
     }
 
 
+    private void checkPermissions() {
+
+        if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.CAMERA)
+                != PackageManager.PERMISSION_GRANTED) {
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
+                    Manifest.permission.CAMERA)) {
+            } else {
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.CAMERA},
+                        MY_PERMISSIONS_CAM);
+            }
+
+        }
+
+
+
+
+    }
 
     public void activityRecognize(View v) {
         Intent intent = new Intent(this, RecognizeActivity.class);
         startActivity(intent);
+    }
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case MY_PERMISSIONS_CAM:
+            {
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    if (ContextCompat.checkSelfPermission(this,
+                            Manifest.permission.CAMERA)
+                            != PackageManager.PERMISSION_GRANTED) {
+                        if (ActivityCompat.shouldShowRequestPermissionRationale(this,
+                                Manifest.permission.CAMERA)) {
+                        } else {
+                            ActivityCompat.requestPermissions(this,
+                                    new String[]{Manifest.permission.CAMERA},
+                                    MY_PERMISSIONS_CAM);
+                        }
+
+                    }
+
+
+
+
+
+
+
+
+
+
+                } else {
+                    Toast.makeText(getApplicationContext(),
+                            "Can't access camera.", Toast.LENGTH_LONG).show();
+                    return;
+
+            }
+
+            }
+        }
     }
 
     ///////// GESTURE METHODS //////////

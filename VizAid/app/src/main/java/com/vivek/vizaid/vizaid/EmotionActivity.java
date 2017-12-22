@@ -4,7 +4,6 @@
 package com.vivek.vizaid.vizaid;
 
 
-import android.annotation.TargetApi;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -17,7 +16,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.UtteranceProgressListener;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,7 +28,6 @@ import com.microsoft.projectoxford.emotion.EmotionServiceRestClient;
 import com.microsoft.projectoxford.emotion.contract.RecognizeResult;
 import com.microsoft.projectoxford.emotion.rest.EmotionServiceException;
 import com.vivek.vizaid.vizaid.helper.ImageHelper;
-
 import com.vivek.vizaid.vizaid.helper.SelectImageActivity;
 
 import java.io.ByteArrayInputStream;
@@ -39,7 +37,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
-public class EmotionActivity extends ActionBarActivity {
+public class EmotionActivity extends AppCompatActivity {
 
     // Flag to indicate which task is to be performed.
     private static final int REQUEST_SELECT_IMAGE = 0;
