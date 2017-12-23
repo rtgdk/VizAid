@@ -1,9 +1,6 @@
 ## Our code.fun.do Online Project.
-## Warning 1: If your Android is or higher than 6.0 (MarshMallow) , then please provide permission externally by opening app information and granting the required access permissions. ScreenShots are provided for reference.
-<img src="SampleScreenshots/Warning1.jpg" width="50%"/>
-<img src="SampleScreenshots/Warning2.jpg" width="50%"/>
 
-## Warning 2: App will work only with Internet Access and might take some time on start and while activity description.
+## Warning: App will work only with Internet Access and might take some time on start and while activity description.
 
 
 ##VizAid  (Visual Aid)
