@@ -3,7 +3,7 @@
 ## Warning: App will work only with Internet Access and might take some time on start and while activity description.
 
 
-##VizAid  (Visual Aid)
+## VizAid  (Visual Aid)
 What if blind people could the see world ?
 So we built a System that would describe the world in front of them.
 
@@ -60,11 +60,9 @@ Swipe left for recognizing emotions.
 
 Capture Photo using Camera and wait for the app to speak out the results.
 
-# License
+## License
 
 Microsoft will receive the images you upload and may use them to improve the Computer Vision
 API and related services. By submitting an image, you confirm you have consent
 from everyone in it.
 All Microsoft Cognitive Services SDKs and samples are licensed with the MIT License.
-=======
-
