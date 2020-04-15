@@ -8,7 +8,7 @@ What if blind people could the see world ?
 So we built a System that would describe the world in front of them.
 
 This app is designed basically to simplify the lives of the Visually impaired people. 
-Its uses Microsoft Computer Vision API as well as Microsoft Emotion API, both offered within Microsoft Cognitive services(https://www.microsoft.com/cognitive-services). 
+It uses Microsoft Computer Vision API as well as Microsoft Emotion API, both offered within Microsoft Cognitive services(https://www.microsoft.com/cognitive-services). 
 The app helps the blind people "see" through their Smartphone. It can help them navigate through their daily life. 
 Tha app can describe most of the things around them. It can also read text for them. It can also recognize emotions of the people around them.
 Not only that, it can even recognize famous personalities.
